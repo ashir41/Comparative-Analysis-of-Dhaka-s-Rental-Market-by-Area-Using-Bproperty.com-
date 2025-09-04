@@ -62,7 +62,4 @@ The dashboard includes:
 - **Selenium** – scraping rental listings  
 - **Pandas** – cleaning and transforming data  
 - **Tableau Public** – building interactive dashboards
-
 ---
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
