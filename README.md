@@ -4,7 +4,7 @@ This project analyzes Dhaka’s rental housing market using scraped data. We col
 
 ---
 
-## 4ca Data Collection
+## Data Collection
 
 - **Source:** Rental listings from [Bproperty.com](https://www.bproperty.com/rent/dhaka/residential/1-2-3-4-5-bedroom/) (Dhaka, residential rent, 1–5 bedrooms).  
 - **Scraping:** Selenium WebDriver (Chrome) with Python was used to navigate pages and extract fields. The scraper script `scraper.py`:
@@ -24,7 +24,7 @@ This project analyzes Dhaka’s rental housing market using scraped data. We col
 
 ---
 
-## 9f9 Data Processing
+## Data Processing
 
 - **Cleaning:** The `data_process.ipynb` notebook loads the raw CSV/Excel, splits `location` into `Sub_area` and `Area`, strips units from `size`, and converts `rent price` and `size` to numeric types. It saves the cleaned dataset as `bproperty_rentals_cleaned.xlsx` (note: the notebook contains hard-coded Windows file paths; update these paths before running).
 - **Transformation / Feature Engineering:** The `data_process_new.ipynb` notebook computes additional columns:
@@ -40,7 +40,7 @@ This project analyzes Dhaka’s rental housing market using scraped data. We col
 
 ---
 
-## 4c8 Analysis & Visualization
+## Analysis & Visualization
 
 The cleaned dataset was analyzed in Python and visualized in Tableau.  
 🔗 **Interactive Dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/ashir.intheshar/viz/ComparitiveanalysisofDhakasRentalMarket/DhakasrentalmarketOverview?publish=yes)
@@ -52,7 +52,7 @@ The dashboard includes:
 
 ---
 
-## 511 Key Findings
+## Key Findings
 
 - **Most common unit:** 3-bedroom apartments (majority of listings).  
 - **Popular areas:** Bashundhara R-A, Uttara, Mohammadpur, and Banasree.  
@@ -66,7 +66,7 @@ The dashboard includes:
 
 ---
 
-## 527 Tools & How to run
+## Tools & How to run
 
 - **Requirements:** Python 3, pip packages: `selenium`, `pandas`, and a working Chrome/ChromeDriver installation.
 - **Run scraper:**
